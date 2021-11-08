@@ -1,0 +1,25 @@
+extends _layout.pug
+
+block locals
+  -var title = 'My Portfolio!';
+
+block mainContent
+  body
+    main
+      include _header.pug
+      .works__wrapper
+        h2.works__title WORKS
+        ul.works__list
+          li.works__item
+            img.works__item__img(src="../img/work1.png", alt="勇者ゲームの画像")
+            h3.works__item__title 勇者ゲーム
+            p.works__item__text すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。
+          li.works__item
+            img.works__item__img(src="../img/work2.png", alt="宝探しゲームの画像")
+            h3.works__item__title 宝探しゲーム
+            p.works__item__text すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。
+          li.works__item
+            img.works__item__img(src="../img/work3.png", alt="神経衰弱の画像")
+            h3.works__item__title 神経衰弱
+            p.works__item__text すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。すごいゲームです。
+      include _footer.pug
