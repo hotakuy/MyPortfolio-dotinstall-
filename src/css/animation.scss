@@ -1,0 +1,17 @@
+.animate {
+  opacity: 0;
+  transition: opacity .5s, transform .5s;
+}
+
+.animate.slide__from__left {
+  transform: translateX(-40px);
+}
+.animate.slide__from__right {
+  transform: translateX(40px);
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
+
